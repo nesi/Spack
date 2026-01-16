@@ -1,0 +1,9 @@
+packages:
+  gcc:
+    externals:
+    - spec: gcc@11.4.1 languages:='c,c++'
+      prefix: /usr
+      extra_attributes:
+        compilers:
+          c: /usr/bin/gcc
+          cxx: /usr/bin/g++
