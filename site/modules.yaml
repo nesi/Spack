@@ -25,7 +25,7 @@ modules:
     # easily (old value is in the config yaml, config:module_roots)
     # Where to install modules
     roots:
-      lmod: /opt/nesi/spack/zen3/modules/lmod
+      lmod: /opt/nesi/spack/pure/zen3/modules/lmod
     enable: [lmod]
     lmod:
       hash_length: 0
@@ -51,18 +51,18 @@ modules:
       core_specs:
       - gcc
       # Common utilities built with a non-system (aka default/external) compiler. These can co-exist and should not conflict
-      - bat
-      - broot
-      - dust
-      - eza
-      - fd
-      - jnv
-      - lsd
-      - navi
-      - neovim
-      - rclone
-      - ripgrep
-      - tree
-      - util-linux
-      - zellij
-      - zoxide
+#      - bat
+#      - broot
+#      - dust
+#      - eza
+#      - fd
+#      - jnv
+#      - lsd
+#      - navi
+#      - neovim
+#      - rclone
+#      - ripgrep
+#      - tree
+#      - util-linux
+#      - zellij
+#      - zoxide
