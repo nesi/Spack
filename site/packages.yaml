@@ -1,4 +1,6 @@
 packages:
+  all:
+    require: "%gcc@15.2.0"
   # Bootstrap compiler — unavoidable, needed to build gcc@15.2.0
   gcc:
     externals:
