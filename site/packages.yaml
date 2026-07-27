@@ -1,6 +1,15 @@
 packages:
   all:
     require: "%gcc@15.2.0"
+    providers:
+      mpi: [openmpi]
+      blas: [flexiblas]
+      lapack: [flexiblas]
+      scalapack: [netlib-scalapack]
+      fftw-api: [fftw]
+      zlib-api: [zlib]
+
+
   # Bootstrap compiler — unavoidable, needed to build gcc@15.2.0
   gcc:
     externals:
