@@ -1,5 +1,6 @@
 packages:
   all:
+    require: gcc@15.2.0
     providers:
       mpi: [openmpi]
       blas: [flexiblas]
@@ -7,12 +8,6 @@ packages:
       scalapack: [netlib-scalapack]
       fftw-api: [fftw]
       zlib-api: [zlib]
-  c:
-    require: gcc@15.2.0
-  cxx:
-    require: gcc@15.2.0
-  fortran:
-    require: gcc@15.2.0
 
   # Bootstrap compiler — unavoidable, needed to build gcc@15.2.0
   gcc:
