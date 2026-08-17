@@ -8,11 +8,11 @@ packages:
       fftw-api: [fftw]
       zlib-api: [zlib]
   c:
-    require: "%gcc@15.2.0"
+    require: gcc@15.2.0
   cxx:
-    require: "%gcc@15.2.0"
+    require: gcc@15.2.0
   fortran:
-    require: "%gcc@15.2.0"
+    require: gcc@15.2.0
 
   # Bootstrap compiler — unavoidable, needed to build gcc@15.2.0
   gcc:
