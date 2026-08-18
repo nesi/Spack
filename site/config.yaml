@@ -17,7 +17,7 @@ config:
   # This is the path to the root of the Spack install tree.
   # You can use $spack here to refer to the root of the spack instance.
   install_tree:
-    root: /opt/nesi/spack/pure/zen3
+    root: /opt/nesi/spack/pure/
   #  projections:
   #    all: "${ARCHITECTURE}/${COMPILERNAME}-${COMPILERVER}/${PACKAGE}-${VERSION}-${HASH}"
     # install_tree can include an optional padded length (int or boolean)
@@ -27,7 +27,7 @@ config:
     # if padded_length is an integer, Spack will pad to that many characters,
     # assuming it is higher than the length of the install_tree root.
     # padded_length: 128
-  environments_root: /opt/nesi/spack/pure/zen3/spack-env
+  environments_root: /opt/nesi/spack/pure/spack-env
 
 
   # Locations where templates should be found
