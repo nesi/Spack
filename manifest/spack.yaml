@@ -1,0 +1,33 @@
+spack:
+  specs:
+  # Core toolchain
+  - gcc@15.2.0 languages='c,c++,fortran' +binutils +graphite +piclibs
+  - openmpi fabrics=ucx,ucc schedulers=slurm +legacylaunchers
+  - flexiblas
+  - fftw +mpi +openmp
+  - netlib-scalapack
+
+  # Math / science libs
+  - gsl
+  - hdf5 +mpi
+  - netcdf-c +mpi
+  - netcdf-fortran
+
+  # Language runtimes
+  #- python +optimizations
+  #- r
+
+  # Science apps
+  #- gromacs +mpi
+  #- quantum-espresso +mpi
+
+  # CLI tools (Core modules)
+  - bat
+  - ripgrep
+  - neovim
+  - fd
+  - eza
+
+  concretizer:
+    reuse: true
+    unify: true
